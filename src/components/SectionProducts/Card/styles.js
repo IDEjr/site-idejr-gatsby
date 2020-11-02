@@ -1,11 +1,5 @@
-import React from "react"
-
 // Colors
-import Colors from "../../style/colors"
-
-// Images
-import Institucional from "../../images/product-icon-institucional.png"
-
+import Colors from "../../../style/colors"
 
 // Styled Components
 import styled from "styled-components"
@@ -13,8 +7,7 @@ import styled from "styled-components"
 export const CardContainer = styled.div`
     height: 400px;
     width: 300px;
-    text-align: center;
-    display: block;
+    position: relative;
 
     border-style: solid;
     border-radius: 15px;
@@ -34,6 +27,9 @@ export const CardContainer = styled.div`
         font-weight: 300;
         font-size: 1rem;
         color: ${Colors.BLACK};
+    }
+    &:nth-child(2n+1){
+        left: 0px;
     }
 `;
 
@@ -62,20 +58,3 @@ export const Dot = styled.div`
     margin-bottom: 10px;
 `;
 
-
-const Card = () => {
-
-    return(
-        <CardContainer>
-            <ImageContainer>
-                <img src={Institucional} alt="Institucional" />
-                <h3>Site Institucional</h3>
-                <Dot/>
-                <h4>Ola meu nome é felopildo</h4>
-            </ImageContainer>
-        </CardContainer>
-    )
-
-}
-
-export default Card

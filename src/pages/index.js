@@ -4,10 +4,7 @@ import '../components/layout.css'
 
 
 const IndexPage = () => (
-  
-
   <Contador/>
-
 )
 
 export default IndexPage
