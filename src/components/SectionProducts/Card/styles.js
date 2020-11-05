@@ -10,17 +10,25 @@ export const GridContainer = styled.div`
     height: 100%;
 
     &:nth-child(2n+1){
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; 
     }
+
+    @media screen and (max-width: 760px) { 
+            &{
+                justify-content: center;
+                flex-direction: row;
+            }
+        } 
 `;
 
 export const CardContainer = styled.div`
     height: 300px;
-    width: 270px;
-    position: relative;
+    width: 100%;
+    max-width: 270px;
 
     padding: 5%;
 
+    position: relative;
     text-align: center;
 
     border-style: solid;
