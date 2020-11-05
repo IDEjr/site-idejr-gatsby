@@ -22,7 +22,7 @@ export const GridContainer = styled.div`
 `;
 
 export const CardContainer = styled.div`
-    height: 300px;
+    height: min-content;
     width: 100%;
     max-width: 270px;
 
@@ -49,6 +49,8 @@ export const CardContainer = styled.div`
         font-weight: 300;
         font-size: 1rem;
         color: ${Colors.BLACK};
+        text-align: justify;
+        text-align-last: left;
     }
 `;
 
