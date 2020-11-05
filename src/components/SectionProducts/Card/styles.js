@@ -4,21 +4,35 @@ import Colors from "../../../style/colors"
 // Styled Components
 import styled from "styled-components"
 
+export const GridContainer = styled.div`
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &:nth-child(2n+1){
+        flex-direction: row-reverse;
+    }
+`;
+
 export const CardContainer = styled.div`
-    height: 400px;
-    width: 300px;
+    height: 300px;
+    width: 270px;
     position: relative;
+
+    padding: 5%;
+
+    text-align: center;
 
     border-style: solid;
     border-radius: 15px;
     border-color: ${Colors.PURPLE};
-    border-width: 3px;
+    border-width: 2px;
 
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 
     h3 {
-        font-weight: bold;
+        font-weight: 900;
         font-size: 1.3rem;
         color: ${Colors.PURPLE};
         margin-bottom: 10px;
@@ -28,14 +42,11 @@ export const CardContainer = styled.div`
         font-size: 1rem;
         color: ${Colors.BLACK};
     }
-    &:nth-child(2n+1){
-        left: 0px;
-    }
 `;
 
 export const ImageContainer = styled.div`
     height: 160px;
-    margin: 50px 50px 0px 50px;    
+    padding: 5% 15% 0px 15%;    
     background-image: Institucional;
 
     img {

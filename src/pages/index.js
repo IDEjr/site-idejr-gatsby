@@ -4,8 +4,7 @@ import React from "react"
 import SectionProdutos from "../components/SectionProducts"
 
 const IndexPage = () => (
-  <>
-  </>
+  <SectionProdutos/>
 )
 
 export default IndexPage
