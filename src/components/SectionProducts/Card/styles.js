@@ -51,6 +51,7 @@ export const CardContainer = styled.div`
         color: ${Colors.BLACK};
         text-align: justify;
         text-align-last: left;
+        margin-bottom: 0px;
     }
 `;
 
