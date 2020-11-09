@@ -32,8 +32,8 @@ a > img {
 }
 `
 
-const Container = styled(SectionContainer)`
-    padding: 0px;
+const Container = styled.div`
+    padding: 10vh 0px;
 `
 
 export default class SectionClientes extends Component {
