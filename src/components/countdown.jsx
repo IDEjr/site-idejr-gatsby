@@ -6,27 +6,18 @@ import logo from "../images/logo_roxo.png"
 
 // entre em contato com contato@idejr.com.br
 
+
 const StyledContainer = styled.div`
+    font-family: 'Poppins', sans-serif;
     width:  100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     & span{
         font-size: 40px;
-    }
-    & a {
-        color: #662D91;
-        text-decoration: none;
-    }
-    
-    a:hover 
-    {
-         color:#00A0C6; 
-         text-decoration:none; 
-         cursor:pointer;  
+        margin: 30px;
     }
 
 `
@@ -45,10 +36,24 @@ const BoxText = styled.div`
 
 const Styledh1 = styled.h1`
     font-size: 30px;
+    margin: 30px;
+    & a {
+        color: #662D91;
+        text-decoration: none;
+    }
+    
+    a:hover 
+    {
+         color:#00A0C6; 
+         text-decoration:none; 
+         cursor:pointer;  
+    }
     @media(max-width: 600px){
+        
         text-align: center;
     }
 `
+
 
 
 

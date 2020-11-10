@@ -1,10 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Contador from "../components/countdown"
+import '../components/layout.css'
+
 
 const IndexPage = () => (
   
+
   <Contador/>
 
 )
