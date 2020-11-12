@@ -21,7 +21,7 @@ let Card = class {
     }
 }
 
-let InstucionalInfo = new Card(InstitucionalImage,"Site Institucional","Olá")
+let InstucionalInfo = new Card(InstitucionalImage,"Site Institucional","Ol dsad sadasdasda dsa das das das das das das Ol dsad sadasdasda dsa das das das das das das asáOl dsad sadasdasda dsa das das das das das das asáOl dsad sadasdasda dsa das das das das das das asáasá")
 let BlogInfo = new Card(BlogImage,"Blog","Olá")
 let EcomerceInfo = new Card(EcomerceImage,"E-Comerce","Olá")
 let SistemaInfo = new Card(SistemaImage,"Sistema","Olá")

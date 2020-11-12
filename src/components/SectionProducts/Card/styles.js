@@ -7,7 +7,6 @@ import styled from "styled-components"
 export const GridContainer = styled.div`
     display: flex;
     width: 100%;
-    height: 100%;
 
     &:nth-child(2n+1){
         flex-direction: row-reverse; 
@@ -22,7 +21,6 @@ export const GridContainer = styled.div`
 `;
 
 export const CardContainer = styled.div`
-    height: min-content;
     width: 100%;
     max-width: 270px;
 
