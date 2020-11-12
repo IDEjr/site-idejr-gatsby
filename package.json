@@ -16,10 +16,18 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^6.1.0-beta.2",
+    "@storybook/addon-essentials": "^6.1.0-beta.2",
+    "@storybook/addon-links": "^6.1.0-beta.2",
+    "@storybook/react": "^6.1.0-beta.2",
+    "babel-loader": "^8.1.0",
+    "prettier": "2.1.2",
+    "react-is": "^17.0.1"
   },
   "keywords": [
     "gatsby"
@@ -32,7 +40,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "start-storybook -p 6006 --no-dll",
+    "build-storybook": "build-storybook --no-dll"
   },
   "repository": {
     "type": "git",
