@@ -1,0 +1,117 @@
+.container{
+    background-image: linear-gradient(90deg,#382F76,#95C1AB);    
+}
+
+.section-title{
+    color: white;    
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+    font-size: 20px;    
+}
+
+.flex-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+@media (min-width:1020px) {
+    .flex-form{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-areas: "i1 i2"
+                            "i3 i3"
+                            "i4 i4"; 
+      padding: 8px 400px;      
+      width: 100%;
+     
+    }    
+
+    #nome{
+      grid-area: i1; 
+      width: 75%;
+         
+      
+    }
+
+    #email{
+        grid-area: i2; 
+        width: 150%;       
+    }
+
+    #menssagem{
+        grid-area: i3;
+        width:125%;
+    }
+
+    #botao{
+        grid-area: i4;
+        text-align: center;
+        width: 200px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+}
+
+.form-item{
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    margin: 8px 0;
+    padding: 8px 0;
+    width: 75%;
+}
+
+.nome{
+    background-color: red;
+}
+
+.form-item input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    width: 100%;    
+}
+
+.form-item textarea {
+    background: none;
+    border: none;
+    outline: none;
+    color: white; 
+    width: 100%;
+    margin-top: 20px; 
+}
+
+
+.form-item-title{
+    color:white;
+}
+
+.myButton {		
+	border-radius:10px;
+	border:1px solid white;
+    display: inline-block;    
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:10px 50px;
+    text-decoration:none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+	
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
