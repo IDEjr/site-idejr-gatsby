@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Countdown from "react-countdown"
-import logo from "../images/logo_roxo.png"
+import logo from "../assets/logo_roxo.png"
 
 
 // entre em contato com contato@idejr.com.br
