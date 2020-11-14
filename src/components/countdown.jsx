@@ -19,12 +19,18 @@ const StyledContainer = styled.div`
         font-size: 40px;
         margin: 30px;
     }
+    @media(max-width: 768px){
+        padding: 30px;
+        width:  calc(100vw - 60px);
+        height: calc(100vh - 60px);
+    }
+    
 
 `
 const StyledImg = styled.img`
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: auto;
-    margin: 30px;
 `
 
 const BoxText = styled.div`
@@ -33,10 +39,12 @@ const BoxText = styled.div`
     height: auto;
     text-align: center;
 `
+const StyledH1 = styled.h1`
+    font-weight: 300;
+`
 
-const Styledh1 = styled.h1`
-    font-size: 30px;
-    margin: 30px;
+const Styledh2 = styled.h2`
+    font-weight: 300;
     & a {
         color: #662D91;
         text-decoration: none;
@@ -48,9 +56,9 @@ const Styledh1 = styled.h1`
          text-decoration:none; 
          cursor:pointer;  
     }
-    @media(max-width: 600px){
-        
+    @media(max-width: 768px){
         text-align: center;
+        font-size: 15px;
     }
 `
 
@@ -59,19 +67,18 @@ const Styledh1 = styled.h1`
 
 const Contador = () => {
     return(
-        <div>
-            <StyledContainer>
-                <StyledImg src = {logo}/>
-                
-                <Countdown date = {'11-26-2020'}/>
-                
-                <BoxText>
-                    <Styledh1>Quer realizar um projeto conosco?</Styledh1>
-                    <Styledh1>Entre em contato com <a href="contato@idejr.com.br" >contato@idejr.com.br</a></Styledh1>
-                </BoxText>
+        <StyledContainer>
+            <StyledH1>Tem novidade chegando na IDE!</StyledH1>
+            <StyledImg src = {logo}/>
+            
+            <Countdown daysInHours date = {'11-26-2020'}/>
+            
+            <BoxText>
+                <Styledh2>Quer realizar um projeto conosco?</Styledh2>
+                <Styledh2>Envie um e-mail para <a href="contato@idejr.com.br" >contato@idejr.com.br</a></Styledh2>
+            </BoxText>
 
-            </StyledContainer>
-        </div>
+        </StyledContainer>
     )
 }
 
