@@ -3,16 +3,6 @@ import { Link } from "gatsby"
 import "./style.css"
 
 
-function Input(props) {
-
-    return (
-        <div id={props.ide} className="form-item" >
-            <div className="form-item-title">{props.label}</div>
-            <input type={props.type} placeholder="" />
-        </div>
-    )
-}
-
 export default function Hero() {
     return (
         <div className="container">
@@ -23,7 +13,10 @@ export default function Hero() {
                     sistemas sob encomenda
                 </div>
                 <div className="sub-text">
-                    Lorem ipsun
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna 
+                    aliqua.                  
                 </div>
             </div>
         </div>
