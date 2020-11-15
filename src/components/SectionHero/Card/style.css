@@ -1,0 +1,24 @@
+.container{
+    background-color: red;
+    width:100%;
+    height: 95vh;     
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: center;
+    
+    
+
+}
+
+.text-container{    
+    width: 300px;
+    background-color: blue;
+    margin:5%;
+}
+
+.text{
+    font-size: 25px;    
+    color: white;
+}
+
