@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Banner from "../images/hero-background.jpg"
+import Banner from "../../../images/hero-background.jpg"
 
 export const Container = styled.div`
     background-image: url(${Banner});
@@ -9,39 +9,44 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;  
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;    
  `;
 
 export const TextContainer = styled.div`    
     width: 300px;       
     margin:5%;
-    padding:10px;
+    padding:10px;    
 
-  @media (min-width:1020px) {
+  @media (min-width:760px) {
    width: 500px;
    height: 200px;
-   margin: 10%;                 
+   margin: 10%;
+                    
 }
 
 `;
 
 export const Text = styled.div`
     font-size: 25px;    
-    color: blue;
+    color: white;
+    font-weight:bold;
 
   @media (min-width:1020px) {
     font-size: 40px;
-    color: blue;
+    color: white;
     line-height: 1.0;             
 }
 
 `;
 
-export const SubText = styled.div`
-    color: gray;
+export const SubText = styled.h4`
+    color: white;
     margin-top: 20px;
+    font-weight:300;
 
-  @media (min-width:1020px) {
-    color: gray;
+  @media (min-width:1020px) {    
     margin-top: 20px;             
 }
 `;
