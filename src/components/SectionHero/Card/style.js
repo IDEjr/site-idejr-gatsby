@@ -20,18 +20,18 @@ export const TextContainer = styled.div`
     padding:10px;    
 
   @media (min-width:760px) {
-   width: 500px;
+   width: 600px;
    height: 200px;
    margin: 10%;
                     
 }
-
 `;
 
 export const Text = styled.div`
     font-size: 25px;    
     color: white;
     font-weight:bold;
+    
 
   @media (min-width:1020px) {
     font-size: 40px;
