@@ -3,6 +3,8 @@ import React from "react"
 // Components
 import SectionContainer from "../shared/SectionContainer"
 import CardComponent from "./Card/"
+import SectionTitle from "../SectionTitle"
+import Center from "../shared/Center"
 
 // Styled Components
 import {CardsContainer} from "./styled"
@@ -31,6 +33,9 @@ let ArrayCardInfo = [InstucionalInfo,BlogInfo,EcomerceInfo,SistemaInfo]
 const SectionProdutos = () => {
     return(
     <SectionContainer>
+        <Center>
+            <SectionTitle title={"O que você precisa?"} uppertitle={"Produtos"}/>
+        </Center>
         <CardsContainer>
             {ArrayCardInfo.map((card) => 
                 <CardComponent
