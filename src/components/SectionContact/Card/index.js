@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="form-item-title">Menssagem</div>
           <textarea rows="5" cols="50" name="comment" form="usrform"/>
         </div>
-        <a href="#" id="botao" class="myButton">Enviar</a>
+        <a href="#" id="botao" className="myButton">Enviar</a>
       </div>
       
     </div>

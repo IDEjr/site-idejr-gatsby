@@ -37,8 +37,9 @@ const SectionProdutos = () => {
             <SectionTitle title={"O que você precisa?"} uppertitle={"Produtos"}/>
         </Center>
         <CardsContainer>
-            {ArrayCardInfo.map((card) => 
+            {ArrayCardInfo.map((card, index) => 
                 <CardComponent
+                    key={index}
                     Image={card.image}
                     Title={card.title}
                     Description={card.description}/>

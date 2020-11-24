@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Slider from 'infinite-react-carousel';
 
 // Components
-import SectionContainer from '../shared/SectionContainer';
 import SectionTitle from "../SectionTitle"
 import Center from "../shared/Center"
 
