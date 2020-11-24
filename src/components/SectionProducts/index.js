@@ -23,10 +23,10 @@ let Card = class {
     }
 }
 
-let InstucionalInfo = new Card(InstitucionalImage,"Site Institucional","Ol dsad sadasdasda dsa das das das das das das Ol dsad sadasdasda dsa das das das das das das asáOl dsad sadasdasda dsa das das das das das das asáOl dsad sadasdasda dsa das das das das das das asáasá")
-let BlogInfo = new Card(BlogImage,"Blog","Olá")
-let EcomerceInfo = new Card(EcomerceImage,"E-Comerce","Olá")
-let SistemaInfo = new Card(SistemaImage,"Sistema","Olá")
+let InstucionalInfo = new Card(InstitucionalImage,"Site Institucional","Criamos sites intitucionais, tanto sites esstáticos como em Wordpress.")
+let BlogInfo = new Card(BlogImage,"Blog","Criamos blogs para seus projetos.")
+let EcomerceInfo = new Card(EcomerceImage,"E-Comerce","Criamos sites de e-commerce.")
+let SistemaInfo = new Card(SistemaImage,"Sistema","Criamos sistemas sob demanda utilizando as tecnologias mais atualizadas do mercado.")
 
 let ArrayCardInfo = [InstucionalInfo,BlogInfo,EcomerceInfo,SistemaInfo]
 
