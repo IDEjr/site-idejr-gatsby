@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import {Container, TextContainer, Text, SubText} from "./style.js";
 
-
-
 export default function Hero() {
     return (
         <Container>

@@ -7,12 +7,13 @@ const Container = styled.div`
 `
 
 const Uppertitle = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
   color: ${Colors.GREEN}
 `
 
 const Title = styled.h2`
+  margin-top: 5px;
   margin-left: 15px;
   font-size: 30px;
   color: ${Colors.PURPLE};
