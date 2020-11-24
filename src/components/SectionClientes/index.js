@@ -4,6 +4,8 @@ import Slider from 'infinite-react-carousel';
 
 // Components
 import SectionContainer from '../shared/SectionContainer';
+import SectionTitle from "../SectionTitle"
+import Center from "../shared/Center"
 
 // Suport
 import { viewportIsSmall } from '../../support/responsiveness'
@@ -35,6 +37,7 @@ a > img {
 const Container = styled.div`
     padding: 10vh 0px;
 `
+
 
 export default class SectionClientes extends Component {
   constructor(props) {
@@ -79,6 +82,9 @@ export default class SectionClientes extends Component {
 
     return (
         <Container>
+            <Center>
+              <SectionTitle title={"Quem já nos conhece"} uppertitle={"Clientes"}/>
+            </Center>
             <Slider { ...this.state.carouselSettings } onResize={() => this.updateSettingsIfBreakpointReached()}>
             {itensCarousel.map(function (item, index) { return (
 
