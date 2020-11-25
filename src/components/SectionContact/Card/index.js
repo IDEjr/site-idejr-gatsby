@@ -13,9 +13,9 @@ function Input(props) {
   )
 }
 
-export default function Contact() {
+export default function Contact({ ...rest }) {
   return (
-    <div className="container">
+    <div className="container" {...rest} >
       <div className="section-title"><h2>Quer falar conosco ?</h2></div>
       <div className="flex-form">
         <Input ide="nome" label="*Nome" type="text" />

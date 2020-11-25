@@ -8,10 +8,10 @@ export const Container = styled.div`
 `;
 
 
-export default function SectionContainer (props) {
+export default function SectionContainer ({ children, ...rest }) {
     return(
-        <Container>
-            {props.children}
+        <Container {...rest} >
+            {children}
         </Container>
     )
 }

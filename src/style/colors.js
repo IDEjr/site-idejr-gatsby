@@ -7,7 +7,6 @@ const BLACK = '#000000'
 export default {
   PURPLE,
   BLUE,
-
   WHITE,
   BLACK
 }

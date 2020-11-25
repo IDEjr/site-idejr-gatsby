@@ -4,8 +4,11 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body {
+
+html, body {
+	overflow-x: hidden !important;
 	margin: 0;
+	width: 100vw;
 }
 
 html, body, div, span, applet, object, iframe,
