@@ -30,9 +30,9 @@ let SistemaInfo = new Card(SistemaImage,"Sistema","Criamos sistemas sob demanda 
 
 let ArrayCardInfo = [InstucionalInfo,BlogInfo,EcomerceInfo,SistemaInfo]
 
-const SectionProdutos = () => {
+const SectionProdutos = (props) => {
     return(
-    <SectionContainer>
+    <SectionContainer {...props}>
         <Center>
             <SectionTitle title={"O que você precisa?"} uppertitle={"Produtos"}/>
         </Center>

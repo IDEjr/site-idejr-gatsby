@@ -5,15 +5,17 @@ import Produtos from "../components/SectionProducts/index"
 import Sobre from "../components/SectionSobre/index"
 import Contact from "../components/SectionContact/Card/index"
 import Hero from "../components/SectionHero/index"
+import Navbar from "../components/NavBar/index"
 
 const SecondPage = () => (
   <div>
-    <SEO title="Page two" />
+    <SEO title="Empresa Júnior IDE" />
+    <Navbar />
     <Hero />
-    <Sobre />
+    <Sobre id="sobre" />
     <Clientes />
-    <Produtos />
-    <Contact />
+    <Produtos id="produtos" />
+    <Contact id="contato" />
   </div>
  
 )

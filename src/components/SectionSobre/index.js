@@ -8,9 +8,9 @@ import SectionTitle from "../SectionTitle"
 // Styled Components
 import {LinksContainer, TextContainer, Bar, Text} from "./style"
 
-const SectionSobre = () => {
+const SectionSobre = ({ ...rest }) => {
     return(
-        <SectionContainer>
+        <SectionContainer {...rest} >
             <LinksContainer>
                 
             </LinksContainer>
