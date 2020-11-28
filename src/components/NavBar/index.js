@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Logo from "../../assets/logo_branco.png"
 import Burger from "../Burger/index"
 import Colors from "../../style/colors"
-import { SMALL } from "../../support/breakpoints"
+import { SMALL, MEDIUM } from "../../support/breakpoints"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const NAVBAR_HORIZONTAL_PADDING = 300
@@ -22,10 +22,9 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: ${SMALL}px) {
+  @media (max-width: ${MEDIUM}px) {
     width: calc(100vw - ${2*SMALL_NAVBAR_HORIZONTAL_PADDING}px);
     padding: 0 ${SMALL_NAVBAR_HORIZONTAL_PADDING}px;
-    height: ${NAVBAR_HEIGHT}px;
   }
 `
 
@@ -37,7 +36,7 @@ const NavbarLogo = styled.div`
   }
 
   @media (max-width: ${SMALL}px) {
-    width: 50px;
+    width: 55px;
   }
 `
 
@@ -77,6 +76,13 @@ const NavbarLink = styled.a`
   text-decoration: none;
 `
 
+const StyledBurger = styled(Burger)`
+  display: none;
+  @media (max-width: ${SMALL}px) {
+    display: flex;
+  }
+`
+
 const Navbar = ({ ...rest }) => {
   const [hidden, setHiddenMobileNavbar] = useState(true)
   return (
@@ -84,7 +90,7 @@ const Navbar = ({ ...rest }) => {
       <NavbarLogo >
         <img src={Logo} />
       </NavbarLogo>
-      <Burger onClick={() => setHiddenMobileNavbar(!hidden)} active={!hidden} color="white" />
+      <StyledBurger onClick={() => setHiddenMobileNavbar(!hidden)} active={!hidden} color="white" />
       <NavbarLinkList hidden={hidden}>
         <NavbarLinkItem onClick={() => { scrollTo("#sobre"); setHiddenMobileNavbar(true); }}>
           <NavbarLink>
