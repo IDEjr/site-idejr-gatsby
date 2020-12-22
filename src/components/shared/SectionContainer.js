@@ -7,7 +7,6 @@ export const Container = styled.div`
     padding: 10vh 10vw;
 `;
 
-
 export default function SectionContainer ({ children, ...rest }) {
     return(
         <Container {...rest} >

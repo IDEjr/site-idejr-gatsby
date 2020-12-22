@@ -9,20 +9,20 @@ const Container = styled.div`
 const Uppertitle = styled.div`
   font-size: 16px;
   font-style: italic;
-  color: ${Colors.GREEN}
+  color: ${props => props.white ? Colors.WHITE : Colors.GREEN}
 `
 
 const Title = styled.h2`
   margin-top: 5px;
   margin-left: 15px;
   font-size: 30px;
-  color: ${Colors.PURPLE};
+  color: ${props => props.white ? Colors.WHITE : Colors.PURPLE};
 `
 
-const SectionTitle = ({ uppertitle, title }) => (
+const SectionTitle = ({ uppertitle, title, white = false }) => (
   <Container>
-    <Uppertitle>{uppertitle}</Uppertitle>
-    <Title>{title}</Title>
+    <Uppertitle white={white}>{uppertitle}</Uppertitle>
+    <Title white={white}>{title}</Title>
   </Container>  
 )
 
@@ -34,7 +34,8 @@ SectionTitle.propTypes = {
   /**
    Small text shown above title
    */
-  uppertitle: PropTypes.string
+  uppertitle: PropTypes.string,
+  white: PropTypes.bool
 }
 
 
