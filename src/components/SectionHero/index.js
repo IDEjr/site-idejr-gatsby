@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import {Container, TextContainer, Text, SubText} from "./style.js";
 
 export default function Hero() {
@@ -7,15 +6,15 @@ export default function Hero() {
         <Container>
             <TextContainer>
                 <Text>
-                    Experiencia em 
+                    Experiencia em
                     desenvolvimento web &
                     sistemas sob encomenda
                 </Text>
                 <SubText>
                     Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna 
-                    aliqua.                  
+                    incididunt ut labore et dolore magna
+                    aliqua.
                 </SubText>
             </TextContainer>
         </Container>
