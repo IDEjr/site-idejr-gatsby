@@ -88,11 +88,6 @@ const SubmitButton = styled.button `
 	padding:10px 50px;
   background-color: transparent;
   cursor: pointer;
-
-  &:hover {
-    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-	  background-color:#476e9e;
-  }
 `
 
 const ContactForm = () => (
