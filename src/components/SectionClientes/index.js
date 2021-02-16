@@ -7,7 +7,7 @@ import SectionTitle from "../SectionTitle"
 import Center from "../shared/Center"
 
 // Suport
-import { viewportIsSmall } from '../../support/responsiveness'
+import { viewportIsSmall , viewportIsExtraSmall, viewportIsMedium } from '../../support/responsiveness'
 
 const itensCarousel = [
   { image:"https://www.ufpb.br/educacaofinanceira/contents/imagens/brasoes-universidades/ufrgs.png/@@images/image.png", link:"https://idejr.com.br/", empresa:"IDE" },
@@ -65,8 +65,14 @@ export default class SectionClientes extends Component {
   }
 
   getHowManySlidesToShow() {
+    if(viewportIsExtraSmall()) {
+      return 1
+    }
     if(viewportIsSmall()) {
       return 2
+    }
+    if(viewportIsMedium()) {
+      return 4
     }
     return 5
   }
