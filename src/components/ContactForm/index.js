@@ -70,6 +70,14 @@ const Form = styled.form`
   #mensagem {
     grid-area: message;
   }
+
+  @media (max-width:768px) {
+  grid-template-columns: 1fr;
+  grid-template-areas: "name"
+                      "email"
+                      "message"
+                      "submit"; 
+  }
 `
 
 const SubmitButton = styled.button `
