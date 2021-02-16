@@ -6,6 +6,7 @@ import Sobre from "../components/SectionSobre/index"
 import Contact from "../components/SectionContact/index"
 import Hero from "../components/SectionHero/index"
 import Navbar from "../components/NavBar/index"
+import SectionPortfolio from '../components/SectionPortfolio'
 import "../components/layout.css"
 
 const HomePage = () => (
@@ -15,10 +16,11 @@ const HomePage = () => (
     <Hero />
     <Sobre id="sobre" />
     <Clientes />
+    <SectionPortfolio id="portfolio"/>
     <Produtos id="produtos" />
     <Contact id="contato" />
   </div>
- 
+
 )
 
 export default HomePage
