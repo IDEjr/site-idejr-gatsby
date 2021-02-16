@@ -1,55 +1,72 @@
 // Styled Components
 import styled from "styled-components"
 
-// Colors
 import Colors from "../../style/colors"
+import { SMALL } from "../../support/breakpoints"
 
-export const LinksContainer = styled.div`
-    
-    width: 50px;
-    height: 100%;
 
-    @media screen and (max-width: 760px) { 
-        &{
-        }
-    } 
-`;
+export const SectionContainer = styled.section`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height:60vh;
+  padding: 5vh 5vw;
+`
 
 export const TextContainer = styled.div`
-    
-    width: 600px;
-    height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 100%;
+  margin-left: 5vw;
 
-    @media screen and (max-width: 760px) { 
-        &{
-            width: 100%;
-        }
-    } 
-`;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    margin-left:0;
+  }
+`
 
-export const Text = styled.div`
-
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
-     text-justify: inter-word;
-
-    padding-right: 100px;
-
-    @media screen and (max-width: 760px) { 
-        &{
-            flex-direction: column;
-            padding-right: 0px;
-        }
-    } 
-`;
-
-export const Bar = styled.div`
-
+export const Paragraph = styled.p`
+  text-align: justify;
+  position: relative;
+  margin-left: 6rem;
+  font-style: italic;
+  color: #A0A0A0;
+  line-height: 1.5rem;
+  &::before {
+    content:"";
+    position: absolute;
+    top: 0.5rem;
+    left: -4rem;
     background-color: ${Colors.BLUE};
-    height: 1px;
-    width: 70px;
-    min-width: 70px;
-    margin-bottom: 30px;
-    margin-right: 30px;
-`;
+    height: 2px;
+    width: 3.5rem;
+  }
+
+  @media (max-width: ${SMALL}px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    &::before {
+      left: 0;
+      width: 2rem;
+    }
+    &::first-letter {
+      margin-left: 2.5rem;
+    }
+  }
+`
+
+export const SectionBackground = styled.img`
+  position: absolute;
+  z-index: -99;
+  height: 100%;
+  top: 40%;
+  right: -25%;
+  max-width: 60vw;
+  @media (max-width: ${SMALL}px) {
+    right: 0;
+  }
+`
