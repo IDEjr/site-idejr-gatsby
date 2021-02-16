@@ -21,11 +21,12 @@ export const TextContainer = styled.div`
   flex-direction: column;
   width: 600px;
   height: 100%;
-  margin-left: 5vw;
+  margin-left: 10vw;
 
   @media screen and (max-width: 760px) {
     width: 100%;
     margin-left:0;
+    margin-bottom: 2rem;
   }
 `
 
