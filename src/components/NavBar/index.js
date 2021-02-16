@@ -31,7 +31,7 @@ const NavbarContainer = styled.nav`
 const NavbarLogo = styled.div`
   width: 80px;
   img {
-    max-height: 100%; 
+    max-height: 100%;
     max-width: 100%;
   }
 
@@ -88,7 +88,7 @@ const Navbar = ({ ...rest }) => {
   return (
     <NavbarContainer {...rest} >
       <NavbarLogo >
-        <img src={Logo} />
+        <img src={Logo} alt="Empresa júnior IDE - Logo"/>
       </NavbarLogo>
       <StyledBurger onClick={() => setHiddenMobileNavbar(!hidden)} active={!hidden} color="white" />
       <NavbarLinkList hidden={hidden}>
@@ -108,7 +108,7 @@ const Navbar = ({ ...rest }) => {
           </NavbarLink>
         </NavbarLinkItem>
       </NavbarLinkList>
-    </NavbarContainer>  
+    </NavbarContainer>
   )
 }
 
