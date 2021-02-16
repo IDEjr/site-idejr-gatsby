@@ -87,9 +87,11 @@ export default class SectionClientes extends Component {
 
     return (
         <Container>
-            <Center>
-              <SectionTitle title={"Quem já nos conhece"} uppertitle={"Clientes"}/>
-            </Center>
+            <div style={{paddingLeft: '10vw', paddingRight: '10vw'}}>
+              <Center>
+                <SectionTitle title={"Quem já nos conhece"} uppertitle={"Clientes"}/>
+              </Center>
+            </div>
             <Slider { ...this.state.carouselSettings } onResize={() => this.updateSettingsIfBreakpointReached()}>
             {itensCarousel.map(function (item, index) { return (
 
