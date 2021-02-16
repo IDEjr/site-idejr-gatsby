@@ -64,6 +64,10 @@ export const ImageContainer = styled.div`
         margin: 0px;
         margin-bottom: 20px;
     }
+
+    @media screen and (max-width: 760px) { 
+      padding: 0px;
+    } 
 `;
 
 export const Dot = styled.div`
