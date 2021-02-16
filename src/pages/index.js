@@ -9,16 +9,18 @@ import Navbar from "../components/NavBar/index"
 import "../components/layout.css"
 
 const HomePage = () => (
-  <div style={{position: 'relative'}}>
-    <SEO title="Empresa Júnior IDE" />
-    <Navbar />
-    <Hero />
-    <Sobre id="sobre" />
-    <Clientes />
-    <Produtos id="produtos" />
-    <Contact id="contato" />
+  <div style={{ position: 'relative' }}>
+    <div style={{ overflow: 'hidden' }}>
+      <SEO title="Empresa Júnior IDE" />
+      <Navbar />
+      <Hero />
+      <Sobre id="sobre" />
+      <Clientes />
+      <Produtos id="produtos" />
+      <Contact id="contato" />
+    </div>
   </div>
- 
+
 )
 
 export default HomePage
