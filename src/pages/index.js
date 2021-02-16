@@ -9,7 +9,7 @@ import Navbar from "../components/NavBar/index"
 import "../components/layout.css"
 
 const HomePage = () => (
-  <div>
+  <div style={{position: 'relative'}}>
     <SEO title="Empresa Júnior IDE" />
     <Navbar />
     <Hero />
