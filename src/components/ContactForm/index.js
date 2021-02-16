@@ -70,6 +70,14 @@ const Form = styled.form`
   #mensagem {
     grid-area: message;
   }
+
+  @media (max-width:768px) {
+  grid-template-columns: 1fr;
+  grid-template-areas: "name"
+                      "email"
+                      "message"
+                      "submit"; 
+  }
 `
 
 const SubmitButton = styled.button `
@@ -80,11 +88,6 @@ const SubmitButton = styled.button `
 	padding:10px 50px;
   background-color: transparent;
   cursor: pointer;
-
-  &:hover {
-    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-	  background-color:#476e9e;
-  }
 `
 
 const ContactForm = () => (
