@@ -14,15 +14,14 @@ export default function SectionPortfolio() {
       <SectionHeader title="Portfolio" description="Alguns projetos que já fizemos" />
 
       <SliderContainer>
-        <Slider  autoplay prevArrow={<Control prev>prev</Control>} nextArrow={<Control>next</Control>}>
+        <Slider   prevArrow={<Control prev>prev</Control>} nextArrow={<Control>next</Control>}>
           <PortfolioItem
-            logoProps={{src: item1Logo, alt: "Portfolio item logo"}}
-            contentProps={{src: item1Content, alt: "Portfolio item content"}}
+            logoProps={{src: item1Logo, alt: "logo ceanut"}}
+            contentProps={{src: item1Content, alt: "amostra website ceanut"}}
           />
-
           <PortfolioItem
-            logoProps={{src: item1Logo, alt: "Portfolio item logo"}}
-            contentProps={{src: item1Content, alt: "Portfolio item content"}}
+            logoProps={{src: item1Logo, alt: "logo ceanut"}}
+            contentProps={{src: item1Content, alt: "amostra website ceanut"}}
           />
         </Slider>
       </SliderContainer>
