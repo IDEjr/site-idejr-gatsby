@@ -10,9 +10,9 @@ import {LinksContainer, TextContainer, Bar, Text} from "./style"
 
 const SectionSobre = ({ ...rest }) => {
     return(
-        <SectionContainer {...rest} >
+        <SectionContainer id="sobre" {...rest} >
             <LinksContainer>
-                
+
             </LinksContainer>
             <TextContainer>
                     <Center>

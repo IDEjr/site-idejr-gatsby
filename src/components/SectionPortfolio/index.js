@@ -10,7 +10,7 @@ import item1Content from '../../assets/portfolio-item-1-content.png'
 
 export default function SectionPortfolio() {
   return (
-    <SectionContainer>
+    <SectionContainer id="portfolio">
       <SectionHeader title="Portfolio" description="Alguns projetos que já fizemos" />
 
       <SliderContainer>

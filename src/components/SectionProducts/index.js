@@ -32,12 +32,12 @@ let ArrayCardInfo = [InstucionalInfo,BlogInfo,EcomerceInfo,SistemaInfo]
 
 const SectionProdutos = (props) => {
     return(
-    <SectionContainer {...props}>
+    <SectionContainer id="produtos" {...props}>
         <Center>
             <SectionTitle title={"O que você precisa?"} uppertitle={"Produtos"}/>
         </Center>
         <CardsContainer>
-            {ArrayCardInfo.map((card, index) => 
+            {ArrayCardInfo.map((card, index) =>
                 <CardComponent
                     key={index}
                     Image={card.image}
