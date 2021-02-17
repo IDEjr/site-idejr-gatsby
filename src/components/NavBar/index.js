@@ -59,10 +59,10 @@ const NavbarLinkList = styled.ul`
 
 const NavbarLinkItem = styled.li`
   color: white;
-  border-radius: 1.2rem;
+  border-radius: 1.1rem;
   padding: 5px 20px;
   border: ${props => props.featured ? 'solid 1px white' : '0px'};
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0 ${props => props.featured ? '20px' : '10px'};
   cursor: pointer;
   @media (max-width: ${SMALL}px) {
