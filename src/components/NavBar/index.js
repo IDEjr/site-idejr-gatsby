@@ -97,6 +97,16 @@ const Navbar = ({ ...rest }) => {
             Empresa
           </NavbarLink>
         </NavbarLinkItem>
+        <NavbarLinkItem onClick={() => { scrollTo("#clientes"); setHiddenMobileNavbar(true); }}>
+          <NavbarLink>
+            Clientes
+          </NavbarLink>
+        </NavbarLinkItem>
+        <NavbarLinkItem onClick={() => { scrollTo("#portfolio"); setHiddenMobileNavbar(true); }}>
+          <NavbarLink>
+            Portfólio
+          </NavbarLink>
+        </NavbarLinkItem>
         <NavbarLinkItem onClick={() => { scrollTo("#produtos"); setHiddenMobileNavbar(true); }}>
           <NavbarLink>
             Serviços
