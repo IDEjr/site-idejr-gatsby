@@ -59,10 +59,10 @@ const NavbarLinkList = styled.ul`
 
 const NavbarLinkItem = styled.li`
   color: white;
-  border-radius: 15px;
+  border-radius: 1.2rem;
   padding: 5px 20px;
   border: ${props => props.featured ? 'solid 1px white' : '0px'};
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0 ${props => props.featured ? '20px' : '10px'};
   cursor: pointer;
   @media (max-width: ${SMALL}px) {
@@ -72,8 +72,17 @@ const NavbarLinkItem = styled.li`
   }
 `
 
-const NavbarLink = styled.a`
+const NavbarLink = styled.button`
   text-decoration: none;
+  padding: 0;
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
 `
 
 const StyledBurger = styled(Burger)`
@@ -92,28 +101,28 @@ const Navbar = ({ ...rest }) => {
       </NavbarLogo>
       <StyledBurger onClick={() => setHiddenMobileNavbar(!hidden)} active={!hidden} color="white" />
       <NavbarLinkList hidden={hidden}>
-        <NavbarLinkItem onClick={() => { scrollTo("#sobre"); setHiddenMobileNavbar(true); }}>
-          <NavbarLink>
+        <NavbarLinkItem>
+          <NavbarLink onClick={() => { scrollTo("#sobre"); setHiddenMobileNavbar(true); }}>
             Empresa
           </NavbarLink>
         </NavbarLinkItem>
-        <NavbarLinkItem onClick={() => { scrollTo("#clientes"); setHiddenMobileNavbar(true); }}>
-          <NavbarLink>
+        <NavbarLinkItem>
+          <NavbarLink onClick={() => { scrollTo("#clientes"); setHiddenMobileNavbar(true); }}>
             Clientes
           </NavbarLink>
         </NavbarLinkItem>
-        <NavbarLinkItem onClick={() => { scrollTo("#portfolio"); setHiddenMobileNavbar(true); }}>
-          <NavbarLink>
+        <NavbarLinkItem>
+          <NavbarLink onClick={() => { scrollTo("#portfolio"); setHiddenMobileNavbar(true); }}>
             Portfólio
           </NavbarLink>
         </NavbarLinkItem>
-        <NavbarLinkItem onClick={() => { scrollTo("#produtos"); setHiddenMobileNavbar(true); }}>
-          <NavbarLink>
+        <NavbarLinkItem>
+          <NavbarLink onClick={() => { scrollTo("#produtos"); setHiddenMobileNavbar(true); }}>
             Serviços
           </NavbarLink>
         </NavbarLinkItem>
-        <NavbarLinkItem featured onClick={() => { scrollTo("#contato"); setHiddenMobileNavbar(true); }}>
-          <NavbarLink>
+        <NavbarLinkItem featured>
+          <NavbarLink onClick={() => { scrollTo("#contato"); setHiddenMobileNavbar(true); }}>
             Contato
           </NavbarLink>
         </NavbarLinkItem>
