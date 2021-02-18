@@ -7,7 +7,7 @@ import ContactForm from "../ContactForm/index"
 
 export default function Contact({ ...rest }) {
   return (
-    <Container {...rest} >
+    <Container id="contato" {...rest} >
       <Center>
         <SectionTitle white title="Quer falar conosco ?" />
       </Center>

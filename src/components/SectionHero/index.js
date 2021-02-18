@@ -3,7 +3,7 @@ import {Container, TextContainer, Text, SubText} from "./style.js";
 
 export default function Hero() {
     return (
-        <Container>
+        <Container id="hero">
             <TextContainer>
                 <Text>
                     Experiencia em

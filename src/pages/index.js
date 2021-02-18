@@ -18,8 +18,8 @@ const HomePage = () => (
       <Sobre />
       <Clientes />
       <SectionPortfolio />
-      <Produtos id="produtos" />
-      <Contact id="contato" />
+      <Produtos />
+      <Contact />
     </div>
   </div>
 )

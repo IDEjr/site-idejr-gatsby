@@ -82,11 +82,11 @@ export default class SectionClientes extends Component {
       slidesToShow: this.getHowManySlidesToShow()
     })
   }
-  
+
   render() {
 
     return (
-        <Container>
+        <Container id="clientes">
             <div style={{paddingLeft: '10vw', paddingRight: '10vw'}}>
               <Center>
                 <SectionTitle title={"Quem já nos conhece"} uppertitle={"Clientes"}/>
@@ -104,8 +104,8 @@ export default class SectionClientes extends Component {
                 </PartnerSectionCarouselSlide>
 
             )})}
-            </Slider>    
+            </Slider>
         </Container>
-    ) 
+    )
   }
 }
