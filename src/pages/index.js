@@ -15,7 +15,7 @@ const HomePage = () => (
       <SEO title="Empresa Júnior IDE" />
       <Navbar />
       <Hero />
-      <Sobre id="sobre" />
+      <Sobre />
       <Clientes />
       <SectionPortfolio />
       <Produtos id="produtos" />
