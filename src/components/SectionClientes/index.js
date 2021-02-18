@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import Slider from 'infinite-react-carousel';
 
 // Components
-import SectionTitle from "../SectionTitle"
-import Center from "../shared/Center"
+import SectionHeader from '../shared/SectionHeader'
 
 // Suport
 import { viewportIsSmall , viewportIsExtraSmall, viewportIsMedium } from '../../support/responsiveness'
+import { SMALL } from "../../support/breakpoints"
+
 
 const itensCarousel = [
   { image:"https://www.ufpb.br/educacaofinanceira/contents/imagens/brasoes-universidades/ufrgs.png/@@images/image.png", link:"https://idejr.com.br/", empresa:"IDE" },
@@ -32,11 +33,22 @@ a > img {
   margin: 0;
 }
 `
-
-const Container = styled.div`
-    padding: 10vh 0px;
+export const SectionContainer = styled.section`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50vh;
+    padding: 5vh 5vw;
+    @media (max-width: ${SMALL}px) {
+        min-height: 70vh;
+    }
 `
 
+export const SliderContainer = styled.div`
+  width: 100%;
+`
 
 export default class SectionClientes extends Component {
   constructor(props) {
@@ -47,9 +59,7 @@ export default class SectionClientes extends Component {
         arrowsBlock: false,
         autoplay: true,
         slidesToShow: this.getHowManySlidesToShow(),
-        className: "teste",
         pauseOnHover: true,
-        centerMode:	true,
       }
     }
   }
@@ -86,26 +96,24 @@ export default class SectionClientes extends Component {
   render() {
 
     return (
-        <Container id="clientes">
-            <div style={{paddingLeft: '10vw', paddingRight: '10vw'}}>
-              <Center>
-                <SectionTitle title={"Quem já nos conhece"} uppertitle={"Clientes"}/>
-              </Center>
-            </div>
-            <Slider { ...this.state.carouselSettings } onResize={() => this.updateSettingsIfBreakpointReached()}>
-            {itensCarousel.map(function (item, index) { return (
+        <SectionContainer id="clientes">
+            <SectionHeader title="Clientes" description="Quem já nos conhece" />
+            <SliderContainer>
+              <Slider { ...this.state.carouselSettings } onResize={() => this.updateSettingsIfBreakpointReached()}>
+                {itensCarousel.map(function (item, index) { return (
 
-                <PartnerSectionCarouselSlide key={index}>
+                    <PartnerSectionCarouselSlide key={index}>
 
-                <a href={item.link} target="_blank" rel="noopener noreferrer" >
-                    <img src={item.image} className='image' alt={item.empresa} />
-                </a>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" >
+                        <img src={item.image} className='image' alt={item.empresa} />
+                    </a>
 
-                </PartnerSectionCarouselSlide>
+                    </PartnerSectionCarouselSlide>
 
-            )})}
-            </Slider>
-        </Container>
+                )})}
+              </Slider>
+            </SliderContainer>
+        </SectionContainer>
     )
   }
 }
