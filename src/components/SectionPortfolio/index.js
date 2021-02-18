@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'infinite-react-carousel';
 import { SectionContainer, SectionBackground, SliderContainer, Control } from './style'
 import PortfolioItem from './PortfolioItem'
-import SectionHeader from './SectionHeader'
+import SectionHeader from '../shared/SectionHeader'
 import Blob from '../../assets/bg-blob-2.svg'
 import item1Logo from '../../assets/portfolio-item-1-logo.png'
 import item1Content from '../../assets/portfolio-item-1-content.png'
