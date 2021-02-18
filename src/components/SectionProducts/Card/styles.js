@@ -9,53 +9,51 @@ export const GridContainer = styled.div`
     width: 100%;
 
     &:nth-child(2n+1){
-        flex-direction: row-reverse; 
+        flex-direction: row-reverse;
     }
 
-    @media screen and (max-width: 760px) { 
+    @media screen and (max-width: 760px) {
             &{
                 justify-content: center;
                 flex-direction: row;
             }
-        } 
+        }
 `;
 
 export const CardContainer = styled.div`
     width: 100%;
     max-width: 270px;
-
-    padding: 5%;
-
+    padding: 5% 10%;
     position: relative;
-    text-align: center;
-
     border-style: solid;
     border-radius: 15px;
     border-color: ${Colors.PURPLE};
     border-width: 2px;
-
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 
     h3 {
         font-weight: 900;
         font-size: 1.3rem;
         color: ${Colors.PURPLE};
         margin-bottom: 10px;
+        text-align: center;
     }
     h4 {
         font-weight: 300;
         font-size: 1rem;
-        color: ${Colors.BLACK};
-        text-align: justify;
-        text-align-last: left;
+        color: #A0A0A0;
+        text-align: left;
         margin-bottom: 0px;
+        font-style: italic;
+        line-height:1.5rem;
     }
 `;
 
 export const ImageContainer = styled.div`
     height: 160px;
-    padding: 5% 15% 0px 15%;    
+    padding: 5% 15% 0px 15%;
     background-image: Institucional;
 
     img {
@@ -65,9 +63,9 @@ export const ImageContainer = styled.div`
         margin-bottom: 20px;
     }
 
-    @media screen and (max-width: 760px) { 
+    @media screen and (max-width: 760px) {
       padding: 0px;
-    } 
+    }
 `;
 
 export const Dot = styled.div`

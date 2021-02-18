@@ -1,19 +1,18 @@
 import React from "react"
 
 // Components
-import SectionContainer from "../shared/SectionContainer"
 import CardComponent from "./Card/"
-import SectionTitle from "../SectionTitle"
-import Center from "../shared/Center"
-
+import SectionHeader from "../shared/SectionHeader"
 // Styled Components
-import {CardsContainer} from "./styled"
+import {SectionContainer, CardsContainer, BackgroundImageOne, BackgroundImageTwo} from "./styled"
 
 // Images
 import InstitucionalImage from "../../assets/product-icon-institucional.png"
 import BlogImage from "../../assets/product-icon-blog.png"
 import EcomerceImage from "../../assets/product-icon-ecomerce.png"
 import SistemaImage from "../../assets/product-icon-sistema.png"
+import Blob1 from "../../assets/bg-blob-1.svg"
+import Blob2 from "../../assets/bg-blob-3.svg"
 
 let Card = class {
     constructor(image, title, description) {
@@ -23,19 +22,17 @@ let Card = class {
     }
 }
 
-let InstucionalInfo = new Card(InstitucionalImage,"Site Institucional","Criamos sites intitucionais, tanto sites esstáticos como em Wordpress.")
-let BlogInfo = new Card(BlogImage,"Blog","Criamos blogs para seus projetos.")
-let EcomerceInfo = new Card(EcomerceImage,"E-Comerce","Criamos sites de e-commerce.")
-let SistemaInfo = new Card(SistemaImage,"Sistema","Criamos sistemas sob demanda utilizando as tecnologias mais atualizadas do mercado.")
+let InstucionalInfo = new Card(InstitucionalImage,"Sites Institucionais","Criamos websites institucionais para você estabelecer a sua marca na Web.")
+let BlogInfo = new Card(BlogImage,"Blogs","Criamos blogs integrados para o conteúdo que você sonha produzir.")
+let EcomerceInfo = new Card(EcomerceImage,"E-Comerces","Criamos e-commerces para você levar o seu negócio a um novo nível.")
+let SistemaInfo = new Card(SistemaImage,"Sistemas","Criamos sistemas sob medida utilizando as tecnologias mais atualizadas do mercado.")
 
 let ArrayCardInfo = [InstucionalInfo,BlogInfo,EcomerceInfo,SistemaInfo]
 
 const SectionProdutos = (props) => {
     return(
     <SectionContainer id="produtos" {...props}>
-        <Center>
-            <SectionTitle title={"O que você precisa?"} uppertitle={"Produtos"}/>
-        </Center>
+        <SectionHeader title="Produtos" description="O que você precisa?"/>
         <CardsContainer>
             {ArrayCardInfo.map((card, index) =>
                 <CardComponent
@@ -45,6 +42,8 @@ const SectionProdutos = (props) => {
                     Description={card.description}/>
             )}
         </CardsContainer>
+        <BackgroundImageOne src={Blob1} alt="" aria-hidden="true"/>
+        <BackgroundImageTwo src={Blob2} alt="" aria-hidden="true"/>
     </SectionContainer>
     )
 }
