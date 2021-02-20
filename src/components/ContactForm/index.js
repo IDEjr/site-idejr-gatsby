@@ -1,20 +1,27 @@
 import React from "react"
 import styled from "styled-components"
+import emailjs from 'emailjs-com';
 import Colors from "../../utils/colors"
 
-function Input({ label, type, ...rest }) {
-  return (
-    <div {...rest} >
-      <div className="form-item-title">{label}</div>
-      <input type={type} placeholder="" />
-    </div>
-  )
-}
+const Input = ({ id, name, label, type, placeholder, ...rest }) => (
+  <div id={id || ""} {...rest} >
+    <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
+    <input
+      type={type || "text"}
+      placeholder={placeholder || ""}
+      name={name || ""}
+      />
+  </div>
+)
 
-const TextArea = ({ label, ...rest }) => (
-  <div {...rest}  >
-    <div className="form-item-title">{label}</div>
-    <textarea rows="5" cols="50"/>
+
+const TextArea = ({ id, name, label, placeholder, ...rest }) => (
+  <div id={id || ""} {...rest}  >
+    <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
+    <textarea rows="5" cols="50"
+      placeholder={placeholder || ""}
+      name={name || ""}
+    />
   </div>
 )
 
@@ -28,7 +35,7 @@ const StyledInput = styled(Input)`
     color: white;
     margin-top: 20px;
     width: 100%;
-  } 
+  }
 `
 
 const StyledTextArea = styled(TextArea)`
@@ -51,7 +58,7 @@ const Form = styled.form`
   grid-template-areas: "name email"
                       "message message"
                       "submit submit";
-                      
+
   grid-gap: 15px;
 	font-size:19px;
 
@@ -76,13 +83,13 @@ const Form = styled.form`
   grid-template-areas: "name"
                       "email"
                       "message"
-                      "submit"; 
+                      "submit";
   }
 `
 
 const SubmitButton = styled.button `
   border-radius:10px;
-	border:1px solid white;    
+	border:1px solid white;
 	color: ${Colors.WHITE};
 	font-family: Arial;
 	padding:10px 50px;
@@ -90,13 +97,27 @@ const SubmitButton = styled.button `
   cursor: pointer;
 `
 
-const ContactForm = () => (
-  <Form>
-    <StyledInput id="nome" label="*Nome" type="text" />
-    <StyledInput id="email" label="*Email" type="email" />
-    <StyledTextArea id="mensagem" label="mensagem" />
-    <SubmitButton id="submit" className="myButton">Enviar</SubmitButton>
-  </Form>
-)
+const ContactForm = () => {
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_lwkd6jd', 'template_ihh4lbk', e.target, 'user_ko0sipqntvacdTcfo9SGw')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset()
+  }
+
+  return (
+    <Form onSubmit={sendEmail}>
+      <StyledInput name="name" id="nome" label="*Nome" type="text" />
+      <StyledInput name="email" id="email" label="*Email" type="email" />
+      <StyledTextArea name="message" id="mensagem" label="mensagem" />
+      <SubmitButton id="submit" className="myButton">Enviar</SubmitButton>
+    </Form>
+  )
+}
 
 export default ContactForm
