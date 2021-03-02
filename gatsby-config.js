@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `IDE`,
+    description: `Somos é a empresa júnior do instituto de informática da UFRGS. Uma empresa com foco em desenvolvimento de aplicações web.`,
+    author: `@ide_jr`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,11 +20,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Website IDE`,
+        short_name: `IDE`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#392B79`,
         display: `minimal-ui`,
         icon: `src/assets/logo_roxo.png`, // This path is relative to the root of the site.
       },
