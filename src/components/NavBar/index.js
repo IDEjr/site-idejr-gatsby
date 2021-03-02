@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import Logo from "../../assets/logo_branco.png"
+import Logo from "@assets/logo_branco.png"
 import Burger from "../Burger/index"
-import Colors from "../../style/colors"
-import { SMALL, MEDIUM } from "../../support/breakpoints"
+import Colors from "@style/colors"
+import { SMALL, MEDIUM } from "@support/breakpoints"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const NAVBAR_HORIZONTAL_PADDING = 300

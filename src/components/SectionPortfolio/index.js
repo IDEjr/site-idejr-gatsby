@@ -3,9 +3,9 @@ import Slider from 'infinite-react-carousel';
 import { SectionContainer, SectionBackground, SliderContainer, Control } from './style'
 import PortfolioItem from './PortfolioItem'
 import SectionHeader from '../shared/SectionHeader'
-import Blob from '../../assets/bg-blob-2.svg'
-import item1Logo from '../../assets/portfolio-item-1-logo.png'
-import item1Content from '../../assets/portfolio-item-1-content.png'
+import Blob from '@assets/bg-blob-2.svg'
+import item1Logo from '@assets/portfolio-item-1-logo.png'
+import item1Content from '@assets/portfolio-item-1-content.png'
 // Components
 
 export default function SectionPortfolio() {

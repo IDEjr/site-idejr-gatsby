@@ -1,10 +1,10 @@
-import { MEDIUM , SMALL , EXTRA_SMALL } from '../support/breakpoints'
+import { MEDIUM , SMALL , EXTRA_SMALL } from '@support/breakpoints'
 
 export function getViewportWidth() {
   if (typeof window !== `undefined` && typeof document !== `undefined`) {
     return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   }
-  
+
 }
 
 export function viewportIsSmall() {

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from "prop-types"
-import colors from '../../utils/colors'
-import { SMALL } from "../../support/breakpoints"
+import colors from '@utils/colors'
+import { SMALL } from "@support/breakpoints"
 
 const Div = styled.div`
   position: relative;

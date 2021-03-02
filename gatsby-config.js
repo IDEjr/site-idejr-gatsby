@@ -29,6 +29,23 @@ module.exports = {
         icon: `src/assets/logo_roxo.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@pages": "src/pages",
+          "@assets": "src/assets",
+          "@style": "src/style",
+          "@utils": "src/utils",
+          "@support": "src/support",
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

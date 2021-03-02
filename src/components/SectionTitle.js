@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Colors from "../utils/colors"
+import Colors from "@utils/colors"
 import PropTypes from "prop-types"
 
 const Container = styled.div`
@@ -23,7 +23,7 @@ const SectionTitle = ({ uppertitle, title, white = false }) => (
   <Container>
     <Uppertitle white={white}>{uppertitle}</Uppertitle>
     <Title white={white}>{title}</Title>
-  </Container>  
+  </Container>
 )
 
 SectionTitle.propTypes = {

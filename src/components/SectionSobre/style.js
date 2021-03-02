@@ -1,8 +1,8 @@
 // Styled Components
 import styled from "styled-components"
 
-import Colors from "../../style/colors"
-import { SMALL } from "../../support/breakpoints"
+import Colors from "@style/colors"
+import { SMALL } from "@support/breakpoints"
 
 
 export const SectionContainer = styled.section`

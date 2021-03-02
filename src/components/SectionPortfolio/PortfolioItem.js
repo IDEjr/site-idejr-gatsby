@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from "prop-types"
-import { SMALL } from "../../support/breakpoints"
+import { SMALL } from "@support/breakpoints"
 
 const Item = styled.div`
   position: relative;

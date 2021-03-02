@@ -4,7 +4,7 @@ import SocialNav from "./SocialNav"
 
 // Styled Components
 import {SectionContainer, TextContainer, Paragraph, SectionBackground} from "./style"
-import blob from '../../assets/bg-blob-3.svg'
+import blob from '@assets/bg-blob-3.svg'
 
 const SectionSobre = (props) => {
     return(

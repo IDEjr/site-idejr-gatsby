@@ -7,12 +7,12 @@ import SectionHeader from "../shared/SectionHeader"
 import {SectionContainer, CardsContainer, BackgroundImageOne, BackgroundImageTwo} from "./styled"
 
 // Images
-import InstitucionalImage from "../../assets/product-icon-institucional.png"
-import BlogImage from "../../assets/product-icon-blog.png"
-import EcomerceImage from "../../assets/product-icon-ecomerce.png"
-import SistemaImage from "../../assets/product-icon-sistema.png"
-import Blob1 from "../../assets/bg-blob-1.svg"
-import Blob2 from "../../assets/bg-blob-3.svg"
+import InstitucionalImage from "@assets/product-icon-institucional.png"
+import BlogImage from "@assets/product-icon-blog.png"
+import EcomerceImage from "@assets/product-icon-ecomerce.png"
+import SistemaImage from "@assets/product-icon-sistema.png"
+import Blob1 from "@assets/bg-blob-1.svg"
+import Blob2 from "@assets/bg-blob-3.svg"
 
 let Card = class {
     constructor(image, title, description) {
