@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import Logo from "@assets/logo_branco.png"
-import Burger from "../Burger/index"
+import Burger from "./Burger"
 import Colors from "@style/colors"
 import { SMALL, MEDIUM } from "@support/breakpoints"
 import scrollTo from 'gatsby-plugin-smoothscroll';
