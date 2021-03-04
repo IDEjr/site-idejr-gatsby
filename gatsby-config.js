@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `IDE`,
-    description: `Somos é a empresa júnior do instituto de informática da UFRGS. Uma empresa com foco em desenvolvimento de aplicações web.`,
+    description: `Somos a IDE, empresa júnior do instituto de informática da UFRGS. Uma empresa com foco em desenvolvimento de aplicações web.`,
     author: `@ide_jr`,
   },
   plugins: [
