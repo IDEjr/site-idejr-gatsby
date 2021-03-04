@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SMALL } from "@support/breakpoints"
+import { SMALL } from "@utils/breakpoints"
 import nextIcon from '@assets/next-arrow-icon.svg'
 
 

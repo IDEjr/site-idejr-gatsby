@@ -1,6 +1,6 @@
 // Styled Components
 import styled from "styled-components"
-import { SMALL } from "../../support/breakpoints"
+import { SMALL } from "@utils/breakpoints"
 
 export const SectionContainer = styled.section`
     position: relative;

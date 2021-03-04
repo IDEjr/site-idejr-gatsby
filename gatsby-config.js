@@ -24,7 +24,7 @@ module.exports = {
         short_name: `IDE`,
         start_url: `/`,
         background_color: `#FFFFFF`,
-        theme_color: `#392B79`,
+        theme_color: `#382F76`,
         display: `minimal-ui`,
         icon: `src/assets/logo_roxo.png`, // This path is relative to the root of the site.
       },
@@ -37,9 +37,7 @@ module.exports = {
           "@components": "src/components",
           "@pages": "src/pages",
           "@assets": "src/assets",
-          "@style": "src/style",
-          "@utils": "src/utils",
-          "@support": "src/support",
+          "@utils": "src/utils"
         },
         extensions: [
           "js",

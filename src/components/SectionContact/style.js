@@ -4,8 +4,8 @@ import SectionContainer from "../shared/SectionContainer"
 
 
 // Colors
-import Colors from "@style/colors"
-import Breakpoints from "@support/breakpoints"
+import Colors from "@utils/colors"
+import Breakpoints from "@utils/breakpoints"
 
 
 export const Container = styled(SectionContainer)`

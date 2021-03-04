@@ -1,4 +1,4 @@
-import { MEDIUM , SMALL , EXTRA_SMALL } from '@support/breakpoints'
+import { MEDIUM , SMALL , EXTRA_SMALL } from '@utils/breakpoints'
 
 export function getViewportWidth() {
   if (typeof window !== `undefined` && typeof document !== `undefined`) {

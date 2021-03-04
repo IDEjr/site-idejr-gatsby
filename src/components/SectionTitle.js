@@ -9,7 +9,7 @@ const Container = styled.div`
 const Uppertitle = styled.div`
   font-size: 16px;
   font-style: italic;
-  color: ${props => props.white ? Colors.WHITE : Colors.GREEN}
+  color: ${props => props.white ? Colors.WHITE : Colors.BLUE}
 `
 
 const Title = styled.h2`

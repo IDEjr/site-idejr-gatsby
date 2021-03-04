@@ -1,5 +1,5 @@
 // Colors
-import Colors from "../../../style/colors"
+import Colors from "@utils/colors"
 
 // Styled Components
 import styled from "styled-components"
