@@ -11,10 +11,7 @@ export default function Hero() {
                     sistemas sob encomenda
                 </Text>
                 <SubText>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna
-                    aliqua.
+                    Empresa júnior IDE
                 </SubText>
             </TextContainer>
         </Container>
