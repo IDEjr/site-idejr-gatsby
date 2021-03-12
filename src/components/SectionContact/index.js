@@ -2,7 +2,7 @@ import React from "react"
 import Center from "../shared/Center"
 import SectionTitle from "../SectionTitle"
 import {Container, FormContainer} from "./style.js"
-import ContactForm from "../ContactForm/index"
+import ContactForm from "./ContactForm"
 
 
 export default function Contact({ ...rest }) {

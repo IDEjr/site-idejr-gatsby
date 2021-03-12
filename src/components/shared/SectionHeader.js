@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from "prop-types"
-import colors from '../../utils/colors'
-import { SMALL } from "../../support/breakpoints"
+import colors from '@utils/colors'
+import { SMALL } from "@utils/breakpoints"
 
 const Div = styled.div`
   position: relative;
@@ -13,7 +13,7 @@ const SectionTitle = styled.h2`
   font-size: 1rem;
   font-style: italic;
   font-weight: normal;
-  color: ${ colors.GREEN };
+  color: ${ colors.BLUE };
   width: fit-content;
   position: absolute;
   left: 0;

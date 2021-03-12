@@ -6,8 +6,8 @@ import Slider from 'infinite-react-carousel';
 import SectionHeader from '../shared/SectionHeader'
 
 // Suport
-import { viewportIsSmall , viewportIsExtraSmall, viewportIsMedium } from '../../support/responsiveness'
-import { SMALL } from "../../support/breakpoints"
+import { viewportIsSmall , viewportIsExtraSmall, viewportIsMedium } from '@utils/responsiveness'
+import { SMALL } from "@utils/breakpoints"
 
 
 const itensCarousel = [

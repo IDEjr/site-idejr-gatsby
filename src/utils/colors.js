@@ -1,6 +1,12 @@
+const PURPLE = '#382F76'
+const BLUE = '#95C1AB'
+
+const WHITE = '#ffffff'
+const BLACK = '#000000'
+
 export default {
-    PURPLE: "#392B79",
-    GREEN: "#B1C4AD",
-    WHITE: "#FFFFFF",
-    BLACK: "#000000"
+  PURPLE,
+  BLUE,
+  WHITE,
+  BLACK
 }

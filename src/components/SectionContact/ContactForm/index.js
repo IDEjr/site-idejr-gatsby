@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import emailjs from 'emailjs-com';
-import Colors from "../../utils/colors"
+import Colors from "@utils/colors"
 
 const Input = ({ id, name, label, type, placeholder, ...rest }) => (
   <div id={id || ""} {...rest} >

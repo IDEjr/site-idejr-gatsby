@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa"
-import colors from "../../style/colors"
-import { SMALL } from "../../support/breakpoints"
+import colors from "@utils/colors"
+import { SMALL } from "@utils/breakpoints"
 
 const Aside = styled.aside`
   position: absolute;
