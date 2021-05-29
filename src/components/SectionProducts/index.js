@@ -24,7 +24,7 @@ let Card = class {
 
 let InstucionalInfo = new Card(InstitucionalImage,"Sites Institucionais","Criamos websites institucionais para você estabelecer a sua marca na Web.")
 let BlogInfo = new Card(BlogImage,"Blogs","Criamos blogs integrados para o conteúdo que você sonha produzir.")
-let EcomerceInfo = new Card(EcomerceImage,"E-Comerces","Criamos e-commerces para você levar o seu negócio a um novo nível.")
+let EcomerceInfo = new Card(EcomerceImage,"E-Commerce","Criamos E-commerce, para você levar o seu negócio a um novo nível.")
 let SistemaInfo = new Card(SistemaImage,"Sistemas","Criamos sistemas sob medida utilizando as tecnologias mais atualizadas do mercado.")
 
 let ArrayCardInfo = [InstucionalInfo,BlogInfo,EcomerceInfo,SistemaInfo]
