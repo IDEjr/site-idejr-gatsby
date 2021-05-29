@@ -50,12 +50,10 @@ export const Paragraph = styled.p`
   @media (max-width: ${SMALL}px) {
     margin-left: 1rem;
     margin-right: 1rem;
+    text-indent: 2.5rem;
     &::before {
       left: 0;
       width: 2rem;
-    }
-    &::first-letter {
-      margin-left: 2.5rem;
     }
   }
 `
