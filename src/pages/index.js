@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "@components/seo"
-import Clientes from "@components/SectionClientes"
+// import Clientes from "@components/SectionClientes"
 import Produtos from "@components/SectionProducts"
 import Sobre from "@components/SectionSobre"
 import Hero from "@components/SectionHero"
@@ -12,7 +12,7 @@ const HomePage = () => (
     <SEO title="Empresa Júnior IDE" />
     <Hero />
     <Sobre />
-    <Clientes />
+    {/* <Clientes /> */}
     <SectionPortfolio />
     <Produtos />
   </Layout>

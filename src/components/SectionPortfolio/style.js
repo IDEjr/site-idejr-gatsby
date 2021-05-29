@@ -9,10 +9,10 @@ export const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
   padding: 5vh 5vw;
   @media (max-width: ${SMALL}px) {
-    height: 70vh;
+    min-height: 70vh;
   }
 `
 
