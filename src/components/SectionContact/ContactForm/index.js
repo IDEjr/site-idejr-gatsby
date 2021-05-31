@@ -52,6 +52,8 @@ const StyledTextArea = styled(TextArea)`
     margin-top: 20px;
     width: 100%;
     font-size: 1rem;
+    min-height: 3rem;
+    resize: vertical;
   }
 `
 
