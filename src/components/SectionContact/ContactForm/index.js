@@ -119,7 +119,7 @@ const ContactForm = () => {
     <Form onSubmit={sendEmail}>
       <StyledInput name="name" id="nome" label="*Nome" type="text" />
       <StyledInput name="email" id="email" label="*Email" type="email" />
-      <StyledTextArea name="message" id="mensagem" label="mensagem" />
+      <StyledTextArea name="message" id="mensagem" label="Mensagem" />
       <SubmitButton id="submit" className="myButton">Enviar</SubmitButton>
     </Form>
   )
