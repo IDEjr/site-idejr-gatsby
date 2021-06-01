@@ -4,23 +4,25 @@ import emailjs from 'emailjs-com';
 import Colors from "@utils/colors"
 
 const Input = ({ id, name, label, type, placeholder, ...rest }) => (
-  <div id={id || ""} {...rest} >
+  <div id={`${id}-container` || ""} {...rest} >
     <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
     <input
       type={type || "text"}
       placeholder={placeholder || ""}
       name={name || ""}
-      />
+      id={id || ""}
+    />
   </div>
 )
 
 
 const TextArea = ({ id, name, label, placeholder, ...rest }) => (
-  <div id={id || ""} {...rest}  >
+  <div id={`${id}-container` || ""} {...rest}  >
     <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
     <textarea rows="5" cols="50"
       placeholder={placeholder || ""}
       name={name || ""}
+      id={id || ""}
     />
   </div>
 )
@@ -28,6 +30,7 @@ const TextArea = ({ id, name, label, placeholder, ...rest }) => (
 const StyledInput = styled(Input)`
   border-bottom: 1px solid white;
   color: ${Colors.WHITE};
+
   input {
     background: none;
     border: none;
@@ -35,12 +38,14 @@ const StyledInput = styled(Input)`
     color: white;
     margin-top: 20px;
     width: 100%;
+    font-size: 1rem;
   }
 `
 
 const StyledTextArea = styled(TextArea)`
   border-bottom: 1px solid white;
   color: ${Colors.WHITE};
+
   textarea {
     background: none;
     border: none;
@@ -48,6 +53,9 @@ const StyledTextArea = styled(TextArea)`
     color: white;
     margin-top: 20px;
     width: 100%;
+    font-size: 1rem;
+    min-height: 3rem;
+    resize: vertical;
   }
 `
 
@@ -62,20 +70,20 @@ const Form = styled.form`
   grid-gap: 15px;
 	font-size:19px;
 
-  #nome {
+  #nome-container {
     grid-area: name;
   }
 
-  #email {
+  #email-container {
     grid-area: email;
+  }
+
+  #mensagem-container {
+    grid-area: message;
   }
 
   #submit {
     grid-area: submit;
-  }
-
-  #mensagem {
-    grid-area: message;
   }
 
   @media (max-width:768px) {
@@ -87,7 +95,7 @@ const Form = styled.form`
   }
 `
 
-const SubmitButton = styled.button `
+const SubmitButton = styled.button`
   border-radius:10px;
 	border:1px solid white;
 	color: ${Colors.WHITE};
@@ -95,6 +103,7 @@ const SubmitButton = styled.button `
 	padding:10px 50px;
   background-color: transparent;
   cursor: pointer;
+  font-size: 1rem;
 `
 
 const ContactForm = () => {
@@ -114,7 +123,7 @@ const ContactForm = () => {
     <Form onSubmit={sendEmail}>
       <StyledInput name="name" id="nome" label="*Nome" type="text" />
       <StyledInput name="email" id="email" label="*Email" type="email" />
-      <StyledTextArea name="message" id="mensagem" label="mensagem" />
+      <StyledTextArea name="message" id="mensagem" label="Mensagem" />
       <SubmitButton id="submit" className="myButton">Enviar</SubmitButton>
     </Form>
   )
