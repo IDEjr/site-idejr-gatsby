@@ -106,11 +106,11 @@ const Navbar = ({ ...rest }) => {
             Empresa
           </NavbarLink>
         </NavbarLinkItem>
-        <NavbarLinkItem>
+        {/* <NavbarLinkItem>
           <NavbarLink onClick={() => { scrollTo("#clientes"); setHiddenMobileNavbar(true); }}>
             Clientes
           </NavbarLink>
-        </NavbarLinkItem>
+        </NavbarLinkItem> */}
         <NavbarLinkItem>
           <NavbarLink onClick={() => { scrollTo("#portfolio"); setHiddenMobileNavbar(true); }}>
             Portfólio
