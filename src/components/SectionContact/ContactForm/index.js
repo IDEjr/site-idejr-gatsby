@@ -4,23 +4,25 @@ import emailjs from 'emailjs-com';
 import Colors from "@utils/colors"
 
 const Input = ({ id, name, label, type, placeholder, ...rest }) => (
-  <div id={id || ""} {...rest} >
+  <div id={`${id}-container` || ""} {...rest} >
     <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
     <input
       type={type || "text"}
       placeholder={placeholder || ""}
       name={name || ""}
+      id={id || ""}
     />
   </div>
 )
 
 
 const TextArea = ({ id, name, label, placeholder, ...rest }) => (
-  <div id={id || ""} {...rest}  >
+  <div id={`${id}-container` || ""} {...rest}  >
     <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
     <textarea rows="5" cols="50"
       placeholder={placeholder || ""}
       name={name || ""}
+      id={id || ""}
     />
   </div>
 )
@@ -68,20 +70,20 @@ const Form = styled.form`
   grid-gap: 15px;
 	font-size:19px;
 
-  #nome {
+  #nome-container {
     grid-area: name;
   }
 
-  #email {
+  #email-container {
     grid-area: email;
+  }
+
+  #mensagem-container {
+    grid-area: message;
   }
 
   #submit {
     grid-area: submit;
-  }
-
-  #mensagem {
-    grid-area: message;
   }
 
   @media (max-width:768px) {
