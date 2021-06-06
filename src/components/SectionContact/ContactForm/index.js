@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com'
+import swal from 'sweetalert'
 import Colors from "@utils/colors"
 
 const Input = ({ id, name, label, type, placeholder, ...rest }) => (
@@ -113,8 +114,18 @@ const ContactForm = () => {
     emailjs.sendForm('service_lwkd6jd', 'template_ihh4lbk', e.target, 'user_ko0sipqntvacdTcfo9SGw')
       .then((result) => {
         console.log(result.text);
+        swal({
+          title: "Email enviado!",
+          text: "Em breve entraremos em contato com você.",
+          icon: "success"
+        })
       }, (error) => {
         console.log(error.text);
+        swal({
+          title: "Email não enviado!",
+          text: "Aconteceu algum problema no envio do seu email, por favor, tente novamente.",
+          icon: "error"
+        })
       });
     e.target.reset()
   }
