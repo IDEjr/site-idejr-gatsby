@@ -83,6 +83,9 @@ const NavbarLink = styled.button`
   outline: none;
   border: 0px;
   cursor: pointer;
+  :hover {
+    opacity: 0.5;
+  }
 `
 
 const StyledBurger = styled(Burger)`
