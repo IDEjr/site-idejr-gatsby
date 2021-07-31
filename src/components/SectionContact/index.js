@@ -9,7 +9,7 @@ export default function Contact({ ...rest }) {
   return (
     <Container id="contato" {...rest} >
       <Center>
-        <SectionTitle white title="Quer falar conosco ?" />
+        <SectionTitle white title="Quer falar conosco?" />
       </Center>
       <FormContainer>
         <ContactForm />

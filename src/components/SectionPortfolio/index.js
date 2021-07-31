@@ -16,7 +16,7 @@ import item3Content from '@assets/portfolio-item-3-content.png'
 export default function SectionPortfolio() {
   return (
     <SectionContainer id="portfolio">
-      <SectionHeader title="Portfolio" description="Alguns projetos que já fizemos" />
+      <SectionHeader title="Portfólio" description="Alguns projetos que já fizemos" />
 
       <SliderContainer>
         <Slider   prevArrow={<Control prev>prev</Control>} nextArrow={<Control>next</Control>}>
