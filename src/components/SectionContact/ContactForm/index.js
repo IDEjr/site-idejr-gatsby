@@ -3,8 +3,9 @@ import styled from "styled-components"
 import emailjs from 'emailjs-com'
 import swal from 'sweetalert'
 import Colors from "@utils/colors"
+import { useState } from "react";
 
-const Input = ({ id, name, label, type, placeholder, ...rest }) => (
+const Input = ({ id, name, label, type, placeholder, onChange, err, ...rest }) => (
   <div id={`${id}-container` || ""} {...rest} >
     <label htmlFor={id || ""} className="form-item-title">{label || ""}</label>
     <input
@@ -12,7 +13,9 @@ const Input = ({ id, name, label, type, placeholder, ...rest }) => (
       placeholder={placeholder || ""}
       name={name || ""}
       id={id || ""}
+      onChange={e => onChange(e.target.value)}
     />
+    {err && <span>*Esse campo é obrigatório</span>}
   </div>
 )
 
@@ -29,7 +32,7 @@ const TextArea = ({ id, name, label, placeholder, ...rest }) => (
 )
 
 const StyledInput = styled(Input)`
-  border-bottom: 1px solid white;
+  
   color: ${Colors.WHITE};
 
   input {
@@ -40,6 +43,14 @@ const StyledInput = styled(Input)`
     margin-top: 20px;
     width: 100%;
     font-size: 1rem;
+    align-self: flex-end;
+    border-bottom: 1px solid white;
+  }
+
+  span {
+    display: block;
+    font-size: 0.875rem;
+    margin-top: 8px;
   }
 `
 
@@ -108,9 +119,22 @@ const SubmitButton = styled.button`
 `
 
 const ContactForm = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [errName, setErrName] = useState(false)
+  const [errEmail, setErrEmail] = useState(false)
+  console.log("errName", errName, "errEmail", errEmail,);
+
   const sendEmail = e => {
     e.preventDefault()
 
+    if (name.length === 0 || email.length === 0) {
+      console.log("Não enviou email");
+      setErrName(name.length === 0);
+      setErrEmail(email.length === 0);
+      return;
+    }
     emailjs.sendForm('service_lwkd6jd', 'template_ihh4lbk', e.target, 'user_ko0sipqntvacdTcfo9SGw')
       .then((result) => {
         console.log(result.text);
@@ -128,12 +152,16 @@ const ContactForm = () => {
         })
       });
     e.target.reset()
+    setErrName(false);
+    setErrEmail(false);
+    setName('');
+    setEmail('');
   }
 
   return (
     <Form onSubmit={sendEmail}>
-      <StyledInput name="name" id="nome" label="*Nome" type="text" />
-      <StyledInput name="email" id="email" label="*Email" type="email" />
+      <StyledInput name="name" id="nome" onChange={setName} label="*Nome" type="text" err={errName} />
+      <StyledInput name="email" id="email" onChange={setEmail} label="*Email" type="email" err={errEmail} />
       <StyledTextArea name="message" id="mensagem" label="Mensagem" />
       <SubmitButton id="submit" className="myButton">Enviar</SubmitButton>
     </Form>
