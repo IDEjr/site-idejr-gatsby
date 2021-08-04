@@ -6,7 +6,7 @@ export default function Hero() {
         <Container id="hero">
             <TextContainer>
                 <Text>
-                    Experiencia em
+                    Experiência em
                     desenvolvimento web &
                     sistemas sob encomenda
                 </Text>

@@ -31,9 +31,9 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.1.0-beta.2",
-    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.1.0-beta.2",
-    "@storybook/react": "^6.1.20",
+    "@storybook/react": "^6.3.6",
     "babel-loader": "^8.1.0",
     "prettier": "2.1.2",
     "react-is": "^17.0.1"
